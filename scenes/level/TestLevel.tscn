@@ -5,13 +5,23 @@
 
 [node name="Node2D" type="Node2D"]
 
+[node name="Player" parent="." instance=ExtResource( 2 )]
+position = Vector2( 531, 1572 )
+
 [node name="Floor" parent="." instance=ExtResource( 1 )]
-position = Vector2( 489, 1735 )
+position = Vector2( 508, 1840 )
 
 [node name="Floor2" parent="." instance=ExtResource( 1 )]
-position = Vector2( 903, 1253 )
+position = Vector2( 868, 1247 )
 
 [node name="Floor3" parent="." instance=ExtResource( 1 )]
-position = Vector2( 185, 803 )
+position = Vector2( 143, 840 )
 
-[node name="Player" parent="." instance=ExtResource( 2 )]
+[node name="Floor4" parent="." instance=ExtResource( 1 )]
+position = Vector2( 143, 302 )
+
+[node name="Floor5" parent="." instance=ExtResource( 1 )]
+position = Vector2( 488, -289 )
+
+[node name="Floor6" parent="." instance=ExtResource( 1 )]
+position = Vector2( 856, -930 )

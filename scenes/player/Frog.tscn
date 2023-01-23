@@ -57,7 +57,7 @@ shape = SubResource( 2 )
 current = true
 limit_left = 0
 limit_right = 1080
-limit_bottom = 1920
+limit_bottom = 2000
 drag_margin_h_enabled = true
 
 [connection signal="area_entered" from="FrogFeet" to="." method="_on_frog_area_entered"]
