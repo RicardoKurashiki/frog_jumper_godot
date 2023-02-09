@@ -1,27 +1,28 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://scenes/world/Floor.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scenes/player/Frog.tscn" type="PackedScene" id=2]
+[ext_resource path="res://scenes/level/LevelScript.gd" type="Script" id=3]
 
 [node name="Node2D" type="Node2D"]
+script = ExtResource( 3 )
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
-position = Vector2( 531, 1572 )
+position = Vector2( 517, 1626 )
 
 [node name="Floor" parent="." instance=ExtResource( 1 )]
 position = Vector2( 508, 1840 )
 
 [node name="Floor2" parent="." instance=ExtResource( 1 )]
-position = Vector2( 868, 1247 )
+position = Vector2( 263, 1233 )
 
 [node name="Floor3" parent="." instance=ExtResource( 1 )]
-position = Vector2( 143, 840 )
+position = Vector2( 878, 821 )
 
 [node name="Floor4" parent="." instance=ExtResource( 1 )]
-position = Vector2( 143, 302 )
+position = Vector2( 535, 418 )
 
-[node name="Floor5" parent="." instance=ExtResource( 1 )]
-position = Vector2( 488, -289 )
-
-[node name="Floor6" parent="." instance=ExtResource( 1 )]
-position = Vector2( 856, -930 )
+[connection signal="generate_floor" from="Floor" to="." method="_on_Floor_generate_floor"]
+[connection signal="generate_floor" from="Floor2" to="." method="_on_Floor_generate_floor"]
+[connection signal="generate_floor" from="Floor3" to="." method="_on_Floor_generate_floor"]
+[connection signal="generate_floor" from="Floor4" to="." method="_on_Floor_generate_floor"]
